@@ -44,15 +44,21 @@ a{
 }
 .link:hover{
   color: ivory;
-  background-color: blue;
+  background-color: purple;
 }
 .link::after{
   content: '';
   display: block;
-  width: 100%;
+  width: 0%;
   height: 3px;
   position: absolute;
-  background-color: blue;
+  background-color: purple;
+  top: 110%;
+  left:0;
+  transition: width 200ms 100ms linear;
+}
+.link:hover::after{
+  width: 100%;
 }
 
 
